@@ -1,0 +1,26 @@
+<html>
+<body><center>
+	<h1> Circuit.js demo </h1>
+	<canvas width=300 height=100></canvas><br>
+	<canvas width=300 height=100></canvas><br>
+</center></body>
+</html>
+
+<script type="text/javascript" src="lib/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="circuit.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('canvas:first').circuit('123456789', {
+			foreground: 'red',
+			background: 'yellow',
+			gridcolor: 'green',
+			motion: 'yes',	
+		});
+		
+		$('canvas:last').circuit('987654321', {
+			background: 'yellow',
+			motion: 'yes',	
+			interval: 500
+		});
+	});
+</script>
