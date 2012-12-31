@@ -1,10 +1,13 @@
-<h1>JQuery plugin to perform LCD display</h1><br>
-Demo: <a href='http://circuitjs.appspot.com'>http://circuitjs.appspot.com</a><br><br>
+#JQuery plugin to perform LCD display
+Demo: <a href='http://circuitjs.appspot.com'>http://circuitjs.appspot.com</a>
 
-<h2>Easy to use</h2>
+##Easy to use</h2>
 We start with a canvas:
+
 		<body><canvas></canvas></body>
+		
 After including `JQuery` and `circuit.js`, we can perform LCD display.
+
 		<script>
 			$(document).ready(function() {
 			  $('canvas').circuit('123456789', {
@@ -16,3 +19,4 @@ After including `JQuery` and `circuit.js`, we can perform LCD display.
 			  });
 			});
 		</script>
+		
