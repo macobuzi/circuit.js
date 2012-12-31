@@ -10,7 +10,7 @@
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the 
  * Apache License for more details.
  *
- * Copyright (c) 2012 Tran Hoang Anh (tranhoanganh89@gmail.com). 
+ * Copyright (c) 2012 Anh Tran(tranhoanganh89@gmail.com). 
  * All rights reserved.
  * 
  * JQuery plugin to perform LCD display
