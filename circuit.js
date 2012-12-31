@@ -1,3 +1,41 @@
+/*
+ * Circuit.js
+ *
+ * This work is free software; you can redistribute it and/or
+ * modify it under the terms of the Apache License as published 
+ * by the Apache Software Foundation.
+ *
+ * This work is distributed in the hope that it will be useful, 
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the 
+ * Apache License for more details.
+ *
+ * Copyright (c) 2012 Tran Hoang Anh (tranhoanganh89@gmail.com). 
+ * All rights reserved.
+ * 
+ * JQuery plugin to perform LCD display
+ * 
+ * # Easy to use
+ * 
+ * We start with a canvas:
+ * 
+ * <body><canvas></canvas></body>
+ *   
+ * After including JQuery and circuit.js, we can perform LCD display.
+ *
+ * <script>
+ * $(document).ready(function() {
+ * 	  $('canvas:first').circuit('123456789', {
+ * 		foreground: 'red',
+ * 		background: 'yellow',
+ * 		gridcolor: 'green',
+* 		motion: 'yes',  
+ * 		interval: 1000
+ * 	  });
+ * });
+ * </script>
+ */
+
 (function ($){
 	var Circuit = function(target, numberString, config) {
 		// Class members
@@ -42,7 +80,7 @@
 			The digit shape corresponding to each number dertermines which line
 			will be visible (true means visible).
 			
-			Line:     0		 1      2      3     4      5      6		
+			Line: 0		 1      2      3     4      5      6	
 		 */
 		DIGIT_SHAPES : {		
 			0: [true,  true,  true,  false, true,  true,  true],

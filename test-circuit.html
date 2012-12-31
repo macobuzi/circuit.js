@@ -1,9 +1,72 @@
 <html>
-<body><center>
-	<h1> Circuit.js demo </h1>
-	<canvas width=300 height=100></canvas><br>
-	<canvas width=300 height=100></canvas><br>
-</center></body>
+<head>
+<style type="text/css">	
+	body {
+		background-color: #2F3C45;
+		color: white;
+	}
+	pre {
+		background-color: lightgray;
+		border: 1px solid gray;
+		color: black;
+	}
+	.header {
+		color: red;
+		background-color: yellow;
+		border: 1px solid gray;
+		margin-right: 10px;
+	}
+	.content {
+		width: 550px;
+		margin: auto;
+	}
+	.download {
+		color: white;
+	}
+	.code {
+		padding-left: 20px;
+	}	
+</style>
+</head>
+<body>
+	<div class='content'>
+		<article>
+			<center>
+			<h1><b class='header'>Circuit.js</b>
+			JQuery plugin to perform LCD display.</h1>
+			<canvas width=300 height=100></canvas><br>
+			<canvas width=300 height=100></canvas><br>
+			<a class='download' href='https://github.com/macobuzi/circuit.js'>
+				Download on Github
+			</a><br><br>
+			<h2>Easy to use</h2>
+			</center>
+			<div class='code'>
+			<p>We start with a canvas:</p>
+			
+			<pre><code>
+	&lt;body&gt;&lt;canvas&gt;&lt;/canvas&gt;&lt;/body&gt;
+			</code></pre>
+			
+			<p>After including <code>JQuery</code> and <code>circuit.js</code>, we can perform LCD display.</p>
+			
+			<pre><code>      
+	&lt;script&gt;
+		$(document).ready(function() {
+			$('canvas').circuit('123456789', {
+				foreground: 'red',
+				background: 'yellow',
+				gridcolor: 'green',
+				motion: 'yes',    
+				interval: 1000
+			});
+		});
+	&lt;/script&gt;
+			</code></pre>
+			</div>
+		</article>
+	</div>
+</body>
 </html>
 
 <script type="text/javascript" src="lib/jquery-1.8.3.min.js"></script>
